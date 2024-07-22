@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+  @apply w-full h-[10vh] p-4 flex items-center border-b-2;
+}
+
+main {
+  @apply w-full h-[90vh] overflow-hidden;
+}

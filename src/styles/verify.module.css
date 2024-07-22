@@ -1,0 +1,31 @@
+.header {
+  @apply justify-center
+}
+
+.logo {
+  @apply h-4/5;
+}
+
+.main {
+  @apply flex flex-col items-center justify-center gap-4;
+}
+
+.verify_img {
+  @apply w-[10.125rem];
+}
+
+.main h1 {
+  @apply text-[1.75rem] font-bold;
+}
+
+.main p:first-of-type {
+  @apply max-w-[25rem] text-[.875rem] text-[#818181] text-center;
+}
+
+.main p:last-of-type {
+  @apply bg-[#F5F5F5] p-2 text-[#818181] font-bold rounded-3xl;
+}
+
+.main button {
+  @apply text-[#0B8659] text-[.875rem] font-bold;
+}
