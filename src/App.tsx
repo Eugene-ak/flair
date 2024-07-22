@@ -1,9 +1,9 @@
-import VerifyAccountPage from "./components/pages/verify-account"
+import CareerStatusPage from "./components/pages/career-status";
 
 function App() {
   return (
     <>
-      <VerifyAccountPage />
+      <CareerStatusPage />
     </>
   )
 }
