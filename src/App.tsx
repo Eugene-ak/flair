@@ -1,9 +1,9 @@
-import AccountTypePage from "./components/pages/account-type";
+import LandingPage from "./components/pages/landing-page";
 
 function App() {
   return (
     <>
-      <AccountTypePage />
+      <LandingPage />
     </>
   )
 }

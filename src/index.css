@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply h-screen max-h-screen overflow-hidden;
+}
+
 header {
   @apply w-full h-[10vh] p-4 flex items-center border-b-2;
 }
 
 main {
-  @apply w-full h-[90vh] overflow-hidden;
+  @apply w-full overflow-hidden;
 }

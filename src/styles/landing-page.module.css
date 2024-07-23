@@ -1,0 +1,139 @@
+.top_container {
+  @apply w-full p-1 flex items-center justify-center border-b;
+}
+
+.top_container > div {
+  @apply bg-[#F7F7F7] py-2 px-4 font-bold flex items-center justify-center gap-4;
+}
+
+.top_container button {
+  @apply py-1 px-3 hover:bg-white;
+}
+
+.top_container button:nth-child(1) {
+  @apply bg-white;
+}
+
+.header {
+  @apply w-full px-16 flex items-center justify-between;
+}
+
+.header > img {
+  @apply h-3/4;
+}
+
+.header > nav {
+  @apply w-max;
+}
+
+.header ul {
+  @apply w-full flex items-center gap-12;
+}
+
+.header li {
+  @apply flex items-center gap-2;
+}
+
+.header > div {
+  @apply flex items-center gap-4;
+}
+
+.header > div > button {
+  @apply px-4 py-2 border;
+}
+
+.header > div > button:last-child {
+  @apply bg-black text-white;
+}
+
+.main {
+  @apply h-[85vh] bg-[#F5F5F5] flex flex-col items-center justify-center;
+}
+
+.main section {
+  @apply flex flex-col gap-4 relative;
+}
+
+.main h1 {
+  @apply text-clamp-heading font-black;
+}
+
+.main p {
+  @apply text-[2.25rem] font-bold;
+}
+
+.main p > span {
+  @apply text-[#0B8659];
+}
+
+.main > section > div {
+  @apply w-full h-max mt-12 sm:bg-white flex sm:flex-row flex-col items-center justify-between gap-4 rounded-full;
+}
+
+.search_group {
+  @apply w-full sm:w-3/4 p-4 bg-white flex flex-row items-center justify-between rounded-full;
+}
+
+.main button:first-child {
+  @apply mx-2;
+}
+
+.main input {
+  @apply w-full mr-auto ml-4 sm:border-r;
+}
+
+.main input:focus-visible {
+  @apply outline-0
+}
+
+.main select {
+  @apply w-full sm:w-max p-4 sm:px-0 rounded-full;
+}
+
+.main div button:last-child {
+  @apply w-max h-3/4 p-2 sm:mr-4 bg-[#0B8659] rounded-full;
+}
+
+.arrow_img, .search_icon {
+  @apply w-8;
+}
+
+.bg_image {
+  @apply absolute;
+}
+
+.bg_image:nth-child(1) {
+  @apply -right-[8rem] -top-24;
+}
+
+.bg_image:nth-child(2) {
+  @apply -left-[15rem] top-20;
+}
+
+.bg_image:nth-child(3) {
+  @apply -right-[15rem] top-20;
+}
+
+.bg_image:nth-child(4) {
+  @apply -left-[18rem] -bottom-[4rem];
+}
+
+.bg_image:nth-child(5) {
+  @apply -left-[4rem] -bottom-[8rem];
+}
+
+.bg_image:nth-child(6) {
+  @apply left-[15rem] -bottom-[6rem];
+}
+
+.bg_image:nth-child(7) {
+  @apply right-[4rem] -bottom-[8rem];
+}
+
+.bg_image:nth-child(8) {
+  @apply -right-[15rem] -bottom-[2rem];
+}
+
+.bg_image:nth-child(9) {
+  @apply -right-[26rem] -bottom-[10rem];
+}

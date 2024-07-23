@@ -11,6 +11,9 @@ export default {
       },
       gridTemplateRows: {
         "2-rows": "repeat(2, 1fr)"
+      },
+      fontSize: {
+        "clamp-heading": "clamp(3rem, 5vw, 4rem)"
       }
     },
   },
