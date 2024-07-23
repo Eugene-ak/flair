@@ -1,0 +1,47 @@
+.header {
+  @apply justify-center;
+}
+
+.logo {
+  @apply h-4/5;
+}
+
+.main {
+  @apply p-4 flex items-start justify-center overflow-y-auto;
+}
+
+.section {
+  @apply w-full max-w-[26rem] mt-2 flex flex-col items-start justify-start gap-6;
+}
+
+.section h1 {
+  @apply text-2xl font-bold;
+}
+
+.section > div {
+  @apply text-[.875rem] font-normal;
+}
+
+.section > div > a {
+  @apply text-[#0B8659] font-bold;
+}
+
+.form {
+  @apply w-full text-[#818181] flex flex-col items-start gap-4;
+}
+
+.form div {
+  @apply w-full;
+}
+
+.form input, .form select {
+  @apply w-full p-2 border;
+}
+
+.divide {
+  @apply w-full flex flex-col sm:flex-row items-center gap-4;
+}
+
+.form button {
+  @apply w-full bg-black text-white p-2;
+}
