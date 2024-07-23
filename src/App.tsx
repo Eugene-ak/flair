@@ -1,9 +1,9 @@
-import CreateAccountPage from "./components/pages/create-account";
+import AccountTypePage from "./components/pages/account-type";
 
 function App() {
   return (
     <>
-      <CreateAccountPage />
+      <AccountTypePage />
     </>
   )
 }
