@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply h-screen max-h-screen relative /* overflow-hidden */;
+  @apply h-screen max-h-screen relative overflow-hidden;
 }
 
 header {

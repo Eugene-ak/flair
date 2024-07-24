@@ -11,7 +11,7 @@
 }
 
 .section {
-  @apply w-full mt-12 grid grid-cols-1 sm:grid-cols-2-auto sm:items-start sm:justify-center gap-8 sm:gap-x-16;
+  @apply w-full m-12 grid grid-cols-1 sm:grid-cols-2-auto sm:items-start sm:justify-center gap-8 sm:gap-x-16;
 }
 
 .section > h1 {

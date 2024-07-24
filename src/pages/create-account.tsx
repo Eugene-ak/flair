@@ -1,5 +1,5 @@
 import Logo from "/images/Flair logo.png";
-import pageStyles from "../../styles/create-account.module.css";
+import pageStyles from "../styles/page-styles/create-account.module.css";
 import { useNavigate } from "react-router-dom";
 
 export default function CreateAccountPage() {

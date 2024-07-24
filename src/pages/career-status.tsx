@@ -1,6 +1,7 @@
-import Logo from "/images/Flair logo.png";
-import pageStyles from "../../styles/career.module.css";
+import pageStyles from "../styles/page-styles/career.module.css";
 import { useNavigate } from "react-router-dom";
+import { SecondaryHeader } from "../components/molecules/Headers";
+
 export default function CareerStatusPage() {
   const navigate = useNavigate();
 
@@ -11,9 +12,7 @@ export default function CareerStatusPage() {
   
   return (
     <>
-      <header className={pageStyles.header}>
-        <img src={Logo} className={pageStyles.logo} alt="logo" />
-      </header>
+      <SecondaryHeader />
       <main className={pageStyles.main}>
         <form method="post" className={pageStyles.form}>
           <h1>Where are you currently in your professional career?</h1>

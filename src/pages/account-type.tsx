@@ -4,7 +4,7 @@ import EmployerImage from "/images/employer.png";
 import MentorImage from "/images/mentor.png";
 import TrainerImage from "/images/trainer.png";
 import RightArrow from "/icons/Arrow-right.png";
-import pageStyles from "../../styles/account-type.module.css";
+import pageStyles from "../styles/page-styles/account-type.module.css";
 import { Link } from "react-router-dom";
 
 export default function AccountTypePage() {

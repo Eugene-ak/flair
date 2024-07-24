@@ -8,21 +8,25 @@ import HalfStar from "/icons/star-half.svg";
 import Award from "/icons/award.svg";
 import Trophy from "/icons/trophy.svg";
 import UploadCloud from "/icons/upload-cloud.svg";
-import pageStyles from "../../styles/profile-setup.module.css";
+import pageStyles from "../styles/page-styles/profile-setup.module.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import WorkExperienceModal from "../modals/WorkExperienceModal";
+import WorkExperienceModal from "../components/modals/WorkExperienceModal";
 
 export default function ProfileSetupPage() {
   const navigate = useNavigate();
-  const [showExperienceModal, setShowExperienceModal] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleClick = () => {
     navigate("/");
   }
 
-  const handleShowExperienceModal = () => {
-    setShowExperienceModal(!showExperienceModal);
+  const openModal = () => {
+    setIsModalOpen(true);
+  }
+  
+  const closeModal = () => {
+    setIsModalOpen(false);
   }
 
   return (
@@ -81,9 +85,9 @@ export default function ProfileSetupPage() {
               <li>
                 <img src={GreenBriefcase} alt="briefcase" />
                 <h3>Work Experience</h3>
-                <img src={Plus} alt="add" onClick={handleShowExperienceModal} />
+                <img src={Plus} alt="add" onClick={openModal} />
                 <p>Where you've worked your role</p>
-                {!showExperienceModal && <WorkExperienceModal onClose={handleShowExperienceModal} />}
+                {isModalOpen && <WorkExperienceModal onClose={closeModal} />}
               </li>
               <li>
                 <img src={HalfStar} alt="star" />

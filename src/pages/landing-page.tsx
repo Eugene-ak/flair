@@ -1,8 +1,3 @@
-import Logo from "/images/Flair logo.png";
-import Briefcase from "/icons/briefcase.svg";
-import UserStar from "/icons/user-star.svg";
-import TrainingImage from "/icons/Training.png";
-import Hamburger from "/icons/menu.png";
 import SearchIcon from "/icons/Search.svg";
 import RightArrow from "/icons/Arrow-right.png";
 import Image1 from "/images/hero-image-1.png";
@@ -14,9 +9,9 @@ import Image6 from "/images/hero-image-6.png";
 import Image7 from "/images/hero-image-7.png";
 import Image8 from "/images/hero-image-8.png";
 import PencilSketch from "/images/pencil-sketch.png";
-import pageStyles from "../../styles/landing-page.module.css";
+import pageStyles from "../styles/page-styles/landing-page.module.css";
 import { Link } from "react-router-dom";
-import WorkExperienceModal from "../modals/WorkExperienceModal";
+import { PrimaryHeader } from "../components/molecules/Headers";
 
 export default function LandingPage() {
   return (
@@ -27,31 +22,7 @@ export default function LandingPage() {
           <button>For Partners</button>
         </div>
       </div>
-      <WorkExperienceModal />
-      <header className={pageStyles.header}>
-        <img src={Logo} alt="logo" />
-        <nav>
-          <ul>
-            <li>
-              <img src={Briefcase} alt="briefcase" />
-              <span>Jobs</span>
-            </li>
-            <li>
-              <img src={UserStar} alt="user" />
-              <span>Mentorship</span>
-            </li>
-            <li>
-              <img src={TrainingImage} alt="training" />
-              <span>Trainings</span>
-            </li>
-          </ul>
-        </nav>
-        <div>
-          <Link to={"/account-type"}>Log in</Link>
-          <Link to={"/account-type"}>Sign up</Link>
-        </div>
-        <img src={Hamburger} className={pageStyles.menu_icon} alt="" />
-      </header>
+      <PrimaryHeader />
 
       <main className={pageStyles.main}>
         <section>

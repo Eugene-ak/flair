@@ -1,6 +1,6 @@
 import Logo from "/images/Flair logo.png";
 import VerifyImage from "/images/verify.png";
-import pageStyles from "../../styles/verify.module.css";
+import pageStyles from "../styles/page-styles/verify.module.css";
 import { Link } from "react-router-dom";
 
 export default function VerifyAccountPage() {

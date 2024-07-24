@@ -1,0 +1,44 @@
+
+.primary_header {
+  @apply w-full px-8 sm:px-16 flex items-center justify-between;
+}
+
+.primary_header > img:first-child {
+  @apply w-[7%] min-w-16 /* h-3/5 */;
+}
+
+.primary_header > nav {
+  @apply w-full hidden lg:flex;
+}
+
+.primary_header ul {
+  @apply w-full flex items-center justify-center gap-12;
+}
+
+.primary_header li {
+  @apply flex items-center gap-2;
+}
+
+.primary_header > div {
+  @apply min-w-max ml-auto hidden sm:flex items-center gap-4;
+}
+
+.primary_header > div > a {
+  @apply px-4 py-2 border;
+}
+
+.primary_header > div > a:last-child {
+  @apply bg-black text-white;
+}
+
+.menu_icon {
+  @apply min-w-4 ml-8 lg:hidden;
+}
+
+.secondary_header {
+  @apply justify-center;
+}
+
+.secondary_header > img {
+  @apply max-h-8 min-h-4 h-6;
+}

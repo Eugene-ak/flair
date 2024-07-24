@@ -1,5 +1,5 @@
 .wrapper {
-  @apply w-[37.75rem] absolute top-16 bg-white text-black flex flex-col items-start gap-4;
+  @apply max-w-[37.75rem] min-w-48 m-4 absolute top-12 bg-white text-black flex flex-col items-start gap-4 rounded-md shadow-2xl;
 }
 
 .header {

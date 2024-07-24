@@ -2,12 +2,12 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import LandingPage from "./components/pages/landing-page";
-import AccountTypePage from "./components/pages/account-type";
-import CreateAccountPage from "./components/pages/create-account";
-import VerifyAccountPage from "./components/pages/verify-account";
-import CareerStatusPage from "./components/pages/career-status";
-import ProfileSetupPage from "./components/pages/profile-setup";
+import LandingPage from "./pages/landing-page";
+import AccountTypePage from "./pages/account-type";
+import CreateAccountPage from "./pages/create-account";
+import VerifyAccountPage from "./pages/verify-account";
+import CareerStatusPage from "./pages/career-status";
+import ProfileSetupPage from "./pages/profile-setup";
 
 const router = createBrowserRouter([
   {

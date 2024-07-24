@@ -1,0 +1,19 @@
+.main {
+  @apply h-[90vh] p-4 pt-12 flex flex-col items-center justify-start gap-4;
+}
+
+.form {
+  @apply max-w-[26rem] h-full mb-8 flex flex-col items-center gap-6;
+}
+
+.form h1 {
+  @apply text-2xl font-bold;
+}
+
+.form button[type="button"] {
+  @apply w-full p-2 text-[.875rem] font-bold border rounded-full;
+}
+
+.form button[type="submit"] {
+  @apply w-full p-2 mt-auto sm:mt-0 bg-black text-white text-[.875rem] font-bold;
+}
