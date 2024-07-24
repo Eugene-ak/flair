@@ -5,6 +5,7 @@ import MentorImage from "/images/mentor.png";
 import TrainerImage from "/images/trainer.png";
 import RightArrow from "/icons/Arrow-right.png";
 import pageStyles from "../../styles/account-type.module.css";
+import { Link } from "react-router-dom";
 
 export default function AccountTypePage() {
   return (
@@ -37,10 +38,10 @@ export default function AccountTypePage() {
               <p>An organisation offering training programmes</p>
             </div>
           </section>
-          <button className={pageStyles.button}>
+          <Link to={"/create-account"} className={pageStyles.link}>
             <span>Next</span>
             <img src={RightArrow} alt="" />
-          </button>
+          </Link>
         </section>
       </main>
     </>

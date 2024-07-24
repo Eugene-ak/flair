@@ -38,11 +38,11 @@
   @apply flex items-center gap-4;
 }
 
-.header > div > button {
+.header > div > a {
   @apply px-4 py-2 border;
 }
 
-.header > div > button:last-child {
+.header > div > a:last-child {
   @apply bg-black text-white;
 }
 
@@ -74,7 +74,7 @@
   @apply w-full sm:w-3/4 p-4 bg-white flex flex-row items-center justify-between rounded-full;
 }
 
-.main button:first-child {
+.main button {
   @apply mx-2;
 }
 
@@ -94,7 +94,7 @@
   @apply outline-0;
 }
 
-.main div button:last-child {
+.main div a {
   @apply w-max h-3/4 p-2 sm:mr-4 bg-[#0B8659] rounded-full;
 }
 

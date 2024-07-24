@@ -1,7 +1,15 @@
 import Logo from "/images/Flair logo.png";
 import pageStyles from "../../styles/create-account.module.css";
+import { useNavigate } from "react-router-dom";
 
 export default function CreateAccountPage() {
+  const navigate = useNavigate();
+
+  const handleCreateAccount = (event: React.FormEvent) => {
+    event.preventDefault();
+    navigate("/verify-account");
+  }
+
   return (
     <>
       <header className={pageStyles.header}>
@@ -46,7 +54,7 @@ export default function CreateAccountPage() {
               <input type="password" id="password" name="password" />
             </div>
 
-            <button type="submit">Create account</button>
+            <button type="submit" onClick={handleCreateAccount}>Create account</button>
           </form>
           <div>
             <span>Already signed up? </span>

@@ -38,10 +38,10 @@
   @apply text-[#818181] text-[.875rem];
 }
 
-.button {
+.link {
   @apply w-full bg-black text-white text-[.875rem] p-3 flex items-center justify-center gap-3;
 }
 
-.button img {
+.link img {
   @apply w-4;
 }

@@ -1,6 +1,7 @@
 import Logo from "/images/Flair logo.png";
 import VerifyImage from "/images/verify.png";
 import pageStyles from "../../styles/verify.module.css";
+import { Link } from "react-router-dom";
 
 export default function VerifyAccountPage() {
   return (
@@ -20,7 +21,7 @@ export default function VerifyAccountPage() {
           Click on the link in the mail to verify your account.
         </p>
         <p>mic***@inpathgroup.africa</p>
-        <button>Resend link</button>
+        <Link to={"/career-status"}>Resend link</Link>
       </main>
     </>
   );

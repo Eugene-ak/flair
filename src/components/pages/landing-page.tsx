@@ -14,6 +14,7 @@ import Image7 from "/images/hero-image-7.png";
 import Image8 from "/images/hero-image-8.png";
 import PencilSketch from "/images/pencil-sketch.png";
 import pageStyles from "../../styles/landing-page.module.css";
+import { Link } from "react-router-dom";
 
 export default function LandingPage() {
   return (
@@ -43,8 +44,8 @@ export default function LandingPage() {
           </ul>
         </nav>
         <div>
-          <button>Log in</button>
-          <button>Sign up</button>
+          <Link to={"/account-type"}>Log in</Link>
+          <Link to={"/account-type"}>Sign up</Link>
         </div>
       </header>
 
@@ -79,13 +80,13 @@ export default function LandingPage() {
               <option value="mentorships">Mentorships</option>
               <option value="trainings">Trainings</option>
             </select>
-            <button>
+            <Link to={"/account-type"}>
               <img
                 src={RightArrow}
                 className={pageStyles.arrow_img}
                 alt="arrow"
               />
-            </button>
+            </Link>
           </div>
         </section>
       </main>

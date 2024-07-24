@@ -9,8 +9,15 @@ import Award from "/icons/Award.svg";
 import Trophy from "/icons/trophy.svg";
 import UploadCloud from "/icons/upload-cloud.svg";
 import pageStyles from "../../styles/profile-setup.module.css";
+import { useNavigate } from "react-router-dom";
 
 export default function ProfileSetupPage() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/");
+  }
+
   return (
     <>
       <header className={pageStyles.header}>
@@ -96,8 +103,8 @@ export default function ProfileSetupPage() {
               </li>
             </ul>
             <div className={pageStyles.btn_group}>
-              <button>I'll do it later</button>
-              <button>Done</button>
+              <button onClick={handleClick}>I'll do it later</button>
+              <button onClick={handleClick}>Done</button>
             </div>
           </div>
         </section>

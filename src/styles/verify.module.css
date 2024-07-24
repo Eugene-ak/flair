@@ -26,6 +26,6 @@
   @apply bg-[#F5F5F5] p-2 text-[#818181] font-bold rounded-3xl;
 }
 
-.main button {
+.main a {
   @apply text-[#0B8659] text-[.875rem] font-bold;
 }
