@@ -15,7 +15,7 @@ export default {
         "2-rows": "repeat(2, 1fr)"
       },
       fontSize: {
-        "clamp-heading": "clamp(1.5rem, 5vw, 3.5rem)",
+        "clamp-heading": "clamp(2rem, 5vw, 3.5rem)",
         "clamp-paragraph": "clamp(1.2rem, 4vw, 2.25rem)"
       }
     },

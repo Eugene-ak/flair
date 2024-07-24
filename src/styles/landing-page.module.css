@@ -51,11 +51,11 @@
 }
 
 .main {
-  @apply h-[82vh] bg-[#F5F5F5] p-8 flex flex-col items-center justify-center;
+  @apply h-[82vh] bg-[#F5F5F5] p-4 flex flex-col items-center justify-center;
 }
 
 .main section {
-  @apply mx-8 flex flex-col gap-4 relative;
+  @apply mx-4 flex flex-col gap-4 relative;
 }
 
 .main h1 {
