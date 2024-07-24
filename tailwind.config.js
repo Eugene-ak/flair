@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       gridTemplateColumns: {
-        "2-columns": "repeat(2, 1fr)"
+        "2-auto": "minmax(12rem, 17rem) minmax(20rem, 38rem)",
+        "2-columns": "repeat(2, 1fr)",
+        "3-columns": "50px 1fr 50px"
       },
       gridTemplateRows: {
         "2-rows": "repeat(2, 1fr)"

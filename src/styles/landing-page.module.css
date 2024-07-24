@@ -90,6 +90,10 @@
   @apply w-full sm:w-max p-4 sm:px-0 rounded-full;
 }
 
+.main select:focus-visible {
+  @apply outline-0;
+}
+
 .main div button:last-child {
   @apply w-max h-3/4 p-2 sm:mr-4 bg-[#0B8659] rounded-full;
 }
@@ -131,7 +135,7 @@
 }
 
 .bg_image:nth-child(8) {
-  @apply -right-[15rem] -bottom-[2rem];
+  @apply -right-[15rem] -bottom-[2rem] z-10;
 }
 
 .bg_image:nth-child(9) {

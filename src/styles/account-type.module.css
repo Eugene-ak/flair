@@ -7,7 +7,7 @@
 }
 
 .main {
-  @apply sm:p-4 flex sm:items-center justify-center;
+  @apply h-[90vh] sm:p-4 flex sm:items-center justify-center;
 }
 
 .section {

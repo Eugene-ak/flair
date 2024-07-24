@@ -7,7 +7,7 @@
 }
 
 .main {
-  @apply p-4 flex items-start justify-center overflow-y-auto;
+  @apply h-[90vh] p-4 flex items-start justify-center overflow-y-auto;
 }
 
 .section {
