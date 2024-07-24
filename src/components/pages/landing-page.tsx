@@ -16,6 +16,7 @@ import Image8 from "/images/hero-image-8.png";
 import PencilSketch from "/images/pencil-sketch.png";
 import pageStyles from "../../styles/landing-page.module.css";
 import { Link } from "react-router-dom";
+import WorkExperienceModal from "../modals/WorkExperienceModal";
 
 export default function LandingPage() {
   return (
@@ -26,6 +27,7 @@ export default function LandingPage() {
           <button>For Partners</button>
         </div>
       </div>
+      <WorkExperienceModal />
       <header className={pageStyles.header}>
         <img src={Logo} alt="logo" />
         <nav>
@@ -73,6 +75,7 @@ export default function LandingPage() {
                   src={SearchIcon}
                   className={pageStyles.search_icon}
                   alt="search"
+                  title="Search"
                 />
               </button>
               <input type="text" placeholder='Try "Civil engineering"' />

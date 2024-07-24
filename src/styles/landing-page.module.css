@@ -98,6 +98,10 @@
   @apply outline-0;
 }
 
+.main select option {
+  @apply p-4;
+}
+
 .main div a {
   @apply w-max h-3/4 p-2 sm:mr-4 bg-[#0B8659] rounded-full;
 }

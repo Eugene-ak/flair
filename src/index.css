@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply h-screen max-h-screen overflow-hidden;
+  @apply h-screen max-h-screen relative /* overflow-hidden */;
 }
 
 header {
@@ -12,4 +12,8 @@ header {
 
 main {
   @apply w-full overflow-hidden;
+}
+
+#modal-overlay {
+  @apply w-full h-screen bg-black bg-opacity-50 absolute top-0 left-0 z-10 flex items-center justify-center;
 }

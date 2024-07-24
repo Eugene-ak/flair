@@ -42,8 +42,12 @@
   @apply w-full flex justify-between;
 }
 
+.summary h3 {
+  @apply text-sm font-bold;
+}
+
 .setup {
-  @apply max-w-[38rem] sm:min-w-[20rem] w-full flex flex-col gap-8 sm:col-start-2;
+  @apply max-w-[38rem] sm:min-w-[20rem] w-full text-sm flex flex-col gap-8 sm:col-start-2;
 }
 
 .setup ul {
@@ -54,8 +58,16 @@
   @apply w-full py-2 grid grid-cols-3-columns border-b;
 }
 
+.setup h3 {
+  @apply font-bold;
+}
+
 .setup ul li p {
   @apply col-start-2 text-[#818181];
+}
+
+.section img:last-child {
+  @apply cursor-pointer;
 }
 
 .btn_group {

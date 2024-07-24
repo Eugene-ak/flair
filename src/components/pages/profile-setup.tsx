@@ -10,12 +10,19 @@ import Trophy from "/icons/trophy.svg";
 import UploadCloud from "/icons/upload-cloud.svg";
 import pageStyles from "../../styles/profile-setup.module.css";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import WorkExperienceModal from "../modals/WorkExperienceModal";
 
 export default function ProfileSetupPage() {
   const navigate = useNavigate();
+  const [showExperienceModal, setShowExperienceModal] = useState(false);
 
   const handleClick = () => {
     navigate("/");
+  }
+
+  const handleShowExperienceModal = () => {
+    setShowExperienceModal(!showExperienceModal);
   }
 
   return (
@@ -35,27 +42,27 @@ export default function ProfileSetupPage() {
             </div>
             <ul>
               <li>
-                <span>Education</span>
+                <h3>Education</h3>
                 <img src={Circle} alt="" />
               </li>
               <li>
-                <span>Work Experience</span>
+                <h3>Work Experience</h3>
                 <img src={Circle} alt="" />
               </li>
               <li>
-                <span>Interests & Skills</span>
+                <h3>Interests & Skills</h3>
                 <img src={Circle} alt="" />
               </li>
               <li>
-                <span>Certification</span>
+                <h3>Certification</h3>
                 <img src={Circle} alt="" />
               </li>
               <li>
-                <span>Accomplishments</span>
+                <h3>Accomplishments</h3>
                 <img src={Circle} alt="" />
               </li>
               <li>
-                <span>Upload Resume</span>
+                <h3>Upload Resume</h3>
                 <img src={Circle} alt="" />
               </li>
             </ul>
@@ -67,37 +74,38 @@ export default function ProfileSetupPage() {
             <ul>
               <li>
                 <img src={Book} alt="book" />
-                <span>Education</span>
+                <h3>Education</h3>
                 <img src={Plus} alt="add" />
                 <p>School info, field of study</p>
               </li>
               <li>
                 <img src={GreenBriefcase} alt="briefcase" />
-                <span>Work Experience</span>
-                <img src={Plus} alt="add" />
+                <h3>Work Experience</h3>
+                <img src={Plus} alt="add" onClick={handleShowExperienceModal} />
                 <p>Where you've worked your role</p>
+                {!showExperienceModal && <WorkExperienceModal onClose={handleShowExperienceModal} />}
               </li>
               <li>
                 <img src={HalfStar} alt="star" />
-                <span>Interests & Skills</span>
+                <h3>Interests & Skills</h3>
                 <img src={Plus} alt="add" />
                 <p>Career interests and skillset</p>
               </li>
               <li>
                 <img src={Award} alt="award" />
-                <span>Certification</span>
+                <h3>Certification</h3>
                 <img src={Plus} alt="add" />
                 <p>Certifications worth highlighting</p>
               </li>
               <li>
                 <img src={Trophy} alt="trophy" />
-                <span>Accomplishments</span>
+                <h3>Accomplishments</h3>
                 <img src={Plus} alt="add" />
                 <p>Personal achievement & impact</p>
               </li>
               <li>
                 <img src={UploadCloud} alt="upload" />
-                <span>Upload Resume</span>
+                <h3>Upload Resume</h3>
                 <img src={Plus} alt="add" />
                 <p>CV, portfolio</p>
               </li>
