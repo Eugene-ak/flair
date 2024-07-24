@@ -2,6 +2,7 @@ import Logo from "/images/Flair logo.png";
 import Briefcase from "/icons/briefcase.svg";
 import UserStar from "/icons/user-star.svg";
 import TrainingImage from "/icons/Training.png";
+import Hamburger from "/icons/menu.png";
 import SearchIcon from "/icons/Search.svg";
 import RightArrow from "/icons/Arrow-right.png";
 import Image1 from "/images/hero-image-1.png";
@@ -47,6 +48,7 @@ export default function LandingPage() {
           <Link to={"/account-type"}>Log in</Link>
           <Link to={"/account-type"}>Sign up</Link>
         </div>
+        <img src={Hamburger} className={pageStyles.menu_icon} alt="" />
       </header>
 
       <main className={pageStyles.main}>

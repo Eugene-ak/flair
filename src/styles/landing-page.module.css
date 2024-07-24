@@ -15,7 +15,7 @@
 }
 
 .header {
-  @apply w-full px-16 flex items-center justify-between;
+  @apply w-full px-8 sm:px-16 flex items-center justify-between;
 }
 
 .header > img {
@@ -23,11 +23,11 @@
 }
 
 .header > nav {
-  @apply w-max;
+  @apply w-full hidden lg:flex;
 }
 
 .header ul {
-  @apply w-full flex items-center gap-12;
+  @apply w-full flex items-center justify-center gap-12;
 }
 
 .header li {
@@ -35,7 +35,7 @@
 }
 
 .header > div {
-  @apply flex items-center gap-4;
+  @apply min-w-max ml-auto hidden sm:flex items-center gap-4;
 }
 
 .header > div > a {
@@ -46,12 +46,16 @@
   @apply bg-black text-white;
 }
 
+.menu_icon {
+  @apply ml-8 lg:hidden;
+}
+
 .main {
   @apply h-[85vh] bg-[#F5F5F5] flex flex-col items-center justify-center;
 }
 
 .main section {
-  @apply flex flex-col gap-4 relative;
+  @apply m-8 flex flex-col gap-4 relative;
 }
 
 .main h1 {
@@ -59,7 +63,7 @@
 }
 
 .main p {
-  @apply text-[2.25rem] font-bold;
+  @apply text-clamp-paragraph font-bold;
 }
 
 .main p > span {

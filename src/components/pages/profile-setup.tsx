@@ -5,7 +5,7 @@ import Plus from "/icons/Add.svg";
 import Book from "/icons/book.svg";
 import GreenBriefcase from "/icons/green-briefcase.svg";
 import HalfStar from "/icons/star-half.svg";
-import Award from "/icons/Award.svg";
+import Award from "/icons/award.svg";
 import Trophy from "/icons/trophy.svg";
 import UploadCloud from "/icons/upload-cloud.svg";
 import pageStyles from "../../styles/profile-setup.module.css";
