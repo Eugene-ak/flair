@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  @apply w-full h-[10vh] p-4 flex items-center border-b-2;
+  @apply w-full h-[10vh] min-h-[8vh] p-4 flex items-center border-b-2;
 }
 
 main {

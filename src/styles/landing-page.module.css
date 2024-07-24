@@ -7,7 +7,7 @@
 }
 
 .top_container button {
-  @apply py-1 px-3 hover:bg-white;
+  @apply py-1 px-3 text-[.875rem] hover:bg-white;
 }
 
 .top_container button:nth-child(1) {
@@ -18,8 +18,8 @@
   @apply w-full px-8 sm:px-16 flex items-center justify-between;
 }
 
-.header > img {
-  @apply h-3/4;
+.header > img:first-child {
+  @apply w-[7%] min-w-16 /* h-3/5 */;
 }
 
 .header > nav {
@@ -47,15 +47,15 @@
 }
 
 .menu_icon {
-  @apply ml-8 lg:hidden;
+  @apply min-w-4 ml-8 lg:hidden;
 }
 
 .main {
-  @apply h-[85vh] bg-[#F5F5F5] flex flex-col items-center justify-center;
+  @apply h-[82vh] bg-[#F5F5F5] p-8 flex flex-col items-center justify-center;
 }
 
 .main section {
-  @apply m-8 flex flex-col gap-4 relative;
+  @apply mx-8 flex flex-col gap-4 relative;
 }
 
 .main h1 {
@@ -71,7 +71,7 @@
 }
 
 .main > section > div {
-  @apply w-full h-max mt-12 sm:bg-white flex sm:flex-row flex-col items-center justify-between gap-4 rounded-full;
+  @apply w-full h-max mt-8 sm:mt-12 sm:bg-white flex sm:flex-row flex-col items-center justify-between gap-4 rounded-full;
 }
 
 .search_group {
@@ -91,7 +91,7 @@
 }
 
 .main select {
-  @apply w-full sm:w-max p-4 sm:px-0 rounded-full;
+  @apply w-full bg-white sm:w-max p-4 sm:px-0 rounded-full;
 }
 
 .main select:focus-visible {
@@ -111,7 +111,7 @@
 }
 
 .bg_image:nth-child(1) {
-  @apply -right-[8rem] -top-24;
+  @apply -right-[10%] -top-24;
 }
 
 .bg_image:nth-child(2) {
@@ -127,15 +127,15 @@
 }
 
 .bg_image:nth-child(5) {
-  @apply -left-[4rem] -bottom-[8rem];
+  @apply -left-[8rem] -bottom-[8rem];
 }
 
 .bg_image:nth-child(6) {
-  @apply left-[15rem] -bottom-[6rem];
+  @apply left-[40%] -bottom-[6rem];
 }
 
 .bg_image:nth-child(7) {
-  @apply right-[4rem] -bottom-[8rem];
+  @apply right-[10%] -bottom-[8rem];
 }
 
 .bg_image:nth-child(8) {
