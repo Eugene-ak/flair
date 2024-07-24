@@ -1,4 +1,3 @@
-import Logo from "/images/Flair logo.png";
 import CandidateImage from "/images/candidate.png";
 import EmployerImage from "/images/employer.png";
 import MentorImage from "/images/mentor.png";
@@ -6,13 +5,12 @@ import TrainerImage from "/images/trainer.png";
 import RightArrow from "/icons/Arrow-right.png";
 import pageStyles from "../styles/page-styles/account-type.module.css";
 import { Link } from "react-router-dom";
+import { SecondaryHeader } from "../components/molecules/Headers";
 
 export default function AccountTypePage() {
   return (
     <>
-      <header className={pageStyles.header}>
-        <img src={Logo} className={pageStyles.logo} alt="logo" />
-      </header>
+      <SecondaryHeader />
       <main className={pageStyles.main}>
         <section className={pageStyles.section}>
           <h1>What type of account are you setting up?</h1>

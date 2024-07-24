@@ -1,14 +1,12 @@
-import Logo from "/images/Flair logo.png";
 import VerifyImage from "/images/verify.png";
 import pageStyles from "../styles/page-styles/verify.module.css";
 import { Link } from "react-router-dom";
+import { SecondaryHeader } from "../components/molecules/Headers";
 
 export default function VerifyAccountPage() {
   return (
     <>
-      <header className={pageStyles.header}>
-        <img src={Logo} className={pageStyles.logo} alt="logo" />
-      </header>
+      <SecondaryHeader />
       <main className={pageStyles.main}>
         <img
           src={VerifyImage}

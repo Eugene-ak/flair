@@ -1,6 +1,6 @@
-import Logo from "/images/Flair logo.png";
 import pageStyles from "../styles/page-styles/create-account.module.css";
 import { useNavigate } from "react-router-dom";
+import { SecondaryHeader } from "../components/molecules/Headers";
 
 export default function CreateAccountPage() {
   const navigate = useNavigate();
@@ -12,9 +12,7 @@ export default function CreateAccountPage() {
 
   return (
     <>
-      <header className={pageStyles.header}>
-        <img src={Logo} className={pageStyles.logo} alt="logo" />
-      </header>
+      <SecondaryHeader />
       <main className={pageStyles.main}>
         <section className={pageStyles.section}>
           <h1>Get started.</h1>

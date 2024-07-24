@@ -11,7 +11,7 @@ header {
 }
 
 main {
-  @apply w-full overflow-hidden;
+  @apply w-full;
 }
 
 #modal-overlay {
