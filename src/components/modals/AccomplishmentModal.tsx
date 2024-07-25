@@ -1,14 +1,21 @@
 import Modal from "./Modal";
 import modalStyles from "../../styles/modal-styles/accomplishment.module.css";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
+import { useState } from "react";
 
 export default function AccomplishmentModal({
   handleClose,
 }: {
   handleClose: VoidFunction;
 }) {
-  return <Modal title="Add Accomplishments" onClose={handleClose}>
-    <form method="post" className={modalStyles.form}>
-      <textarea rows={5} placeholder="Type something"></textarea>
-    </form>
-  </Modal>;
+  const [value, setValue] = useState("");
+
+  return (
+    <Modal title="Add Accomplishments" onClose={handleClose}>
+      <form method="post" className={modalStyles.form}>
+        <ReactQuill theme="snow" value={value} onChange={setValue} />
+      </form>
+    </Modal>
+  );
 }
