@@ -27,7 +27,7 @@
 }
 
 .form input, .form select {
-  @apply w-full p-2 border;
+  @apply w-full p-2 bg-white border;
 }
 
 .divide {

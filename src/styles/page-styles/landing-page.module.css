@@ -15,7 +15,7 @@
 }
 
 .main {
-  @apply h-[83vh] bg-[#F5F5F5] p-4 flex flex-col items-center justify-center;
+  @apply h-[83vh] bg-[#F5F5F5] p-4 flex flex-col items-center justify-center overflow-hidden;
 }
 
 .main section {

@@ -11,7 +11,7 @@
 }
 
 .form {
-  @apply w-full px-8 py-4 text-[#818181] text-sm flex flex-col gap-4;
+  @apply w-full px-8 py-4 text-[#818181] text-sm flex flex-col gap-4 overflow-y-auto;
 }
 
 .form div {
@@ -31,5 +31,5 @@
 }
 
 .divider {
-  @apply w-full flex flex-row gap-4;
+  @apply w-full flex flex-col sm:flex-row gap-4;
 }
