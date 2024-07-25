@@ -19,5 +19,5 @@
 }
 
 .section input {
-  @apply p-6 border border-dashed
+  @apply w-full p-6 border border-dashed
 }

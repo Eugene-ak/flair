@@ -11,7 +11,7 @@
 }
 
 .form section input, .form section select {
-  @apply p-2 border;
+  @apply w-full p-2 border;
 }
 
 .divide {

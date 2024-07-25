@@ -1,22 +1,50 @@
 
 .primary_header {
-  @apply w-full px-8 sm:px-16 flex items-center justify-between;
+  @apply w-full px-8 sm:px-16 text-sm relative flex items-center justify-between;
 }
 
 .primary_header > img:first-child {
-  @apply w-[7%] min-w-16 /* h-3/5 */;
+  @apply w-[7%] min-w-16;
 }
 
-.primary_header > nav {
+.desktop_nav {
   @apply w-full hidden lg:flex;
 }
 
-.primary_header ul {
+.desktop_nav ul {
   @apply w-full flex items-center justify-center gap-12;
 }
 
-.primary_header li {
+.desktop_nav li {
   @apply flex items-center gap-2;
+}
+
+.mobile_nav {
+  @apply w-[100%] bg-white px-2 py-8 absolute top-16 left-0 z-20 flex lg:hidden flex-col self-end items-center gap-4 border shadow-2xl;
+}
+
+.mobile_nav > * {
+  @apply max-w-[20rem] w-full text-base;
+}
+
+.mobile_nav > ul {
+  @apply flex flex-col items-center gap-4;
+}
+
+.mobile_nav > ul > li {
+  @apply w-full p-2 flex justify-center gap-2 shadow-md;
+}
+
+.mobile_nav > div {
+  @apply sm:hidden flex flex-col items-center gap-4;
+}
+
+.mobile_nav > div > a {
+  @apply w-full px-4 py-2 border flex items-center justify-center shadow-md;
+}
+
+.mobile_nav > div > a:last-child {
+  @apply bg-black text-white;
 }
 
 .primary_header > div {
