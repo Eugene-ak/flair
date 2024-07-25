@@ -3,7 +3,7 @@
 }
 
 .section {
-  @apply w-full max-w-[30rem] py-8 sm:max-w-[35rem] p-8 flex flex-col gap-8;
+  @apply w-full max-w-[30rem] sm:max-w-[35rem] p-8 pb-16 flex flex-col gap-8;
 }
 
 .section h1 {

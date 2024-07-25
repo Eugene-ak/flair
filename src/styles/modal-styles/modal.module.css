@@ -1,0 +1,23 @@
+.wrapper {
+  @apply max-w-[37.75rem] w-[37.75rem] min-w-48 m-4 absolute top-12 bg-white text-black flex flex-col items-start gap-4 rounded-md shadow-2xl;
+}
+
+.header {
+  @apply w-full px-8 flex items-center justify-between;
+}
+
+.header h1 {
+  @apply font-bold;
+}
+
+.header img {
+  @apply cursor-pointer;
+}
+
+.footer {
+  @apply w-full px-8 pb-4 flex justify-end;
+}
+
+.footer button {
+  @apply px-8 py-4 text-sm text-[#818181] bg-[#E8E8E8];
+}

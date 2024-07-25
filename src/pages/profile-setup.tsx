@@ -1,4 +1,3 @@
-import Logo from "/images/Flair logo.png";
 import Indicator from "/images/indicator.png";
 import Circle from "/icons/circle.svg";
 import Plus from "/icons/Add.svg";
@@ -12,28 +11,35 @@ import pageStyles from "../styles/page-styles/profile-setup.module.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import WorkExperienceModal from "../components/modals/WorkExperienceModal";
+import { SecondaryHeader } from "../components/molecules/Headers";
+import EducationModal from "../components/modals/EducationModal";
+import ResumeModal from "../components/modals/ResumeModal";
 
 export default function ProfileSetupPage() {
   const navigate = useNavigate();
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isExperienceModalOpen, setIsExperienceModalOpen] = useState(false);
+  const [isEducationModalOpen, setIsEducationModalOpen] = useState(false);
+  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
 
   const handleClick = () => {
     navigate("/");
   }
 
-  const openModal = () => {
-    setIsModalOpen(true);
+  const handleExperienceModal = () => {
+    setIsExperienceModalOpen(!isExperienceModalOpen);
   }
-  
-  const closeModal = () => {
-    setIsModalOpen(false);
+
+  const handleEducationModal = () => {
+    setIsEducationModalOpen(!isEducationModalOpen);
+  }
+
+  const handleResumeModal = () => {
+    setIsResumeModalOpen(!isResumeModalOpen);
   }
 
   return (
     <>
-      <header className={pageStyles.header}>
-        <img src={Logo} className={pageStyles.logo} alt="logo" />
-      </header>
+      <SecondaryHeader />
       <main className={pageStyles.main}>
         <section className={pageStyles.section}>
           <div className={pageStyles.summary}>
@@ -79,15 +85,16 @@ export default function ProfileSetupPage() {
               <li>
                 <img src={Book} alt="book" />
                 <h3>Education</h3>
-                <img src={Plus} alt="add" />
+                <img src={Plus} alt="add" onClick={handleEducationModal} />
                 <p>School info, field of study</p>
+                {isEducationModalOpen && <EducationModal handleClose={handleEducationModal} />}
               </li>
               <li>
                 <img src={GreenBriefcase} alt="briefcase" />
                 <h3>Work Experience</h3>
-                <img src={Plus} alt="add" onClick={openModal} />
+                <img src={Plus} alt="add" onClick={handleExperienceModal} />
                 <p>Where you've worked your role</p>
-                {isModalOpen && <WorkExperienceModal onClose={closeModal} />}
+                {isExperienceModalOpen && <WorkExperienceModal handleClose={handleExperienceModal} />}
               </li>
               <li>
                 <img src={HalfStar} alt="star" />
@@ -110,8 +117,9 @@ export default function ProfileSetupPage() {
               <li>
                 <img src={UploadCloud} alt="upload" />
                 <h3>Upload Resume</h3>
-                <img src={Plus} alt="add" />
+                <img src={Plus} alt="add" onClick={handleResumeModal} />
                 <p>CV, portfolio</p>
+                {isResumeModalOpen && <ResumeModal handleClose={handleResumeModal} />}
               </li>
             </ul>
             <div className={pageStyles.btn_group}>

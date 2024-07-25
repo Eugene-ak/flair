@@ -1,0 +1,23 @@
+.form {
+  @apply w-full px-8 py-4 flex flex-col gap-8;
+}
+
+.section {
+  @apply w-full flex flex-col gap-2;
+}
+
+.section label {
+  @apply w-full flex flex-col gap-1
+}
+
+.section label span:first-child {
+  @apply text-black font-bold;
+}
+
+.section label span:last-child {
+  @apply text-sm text-[#818181];
+}
+
+.section input {
+  @apply p-6 border border-dashed
+}

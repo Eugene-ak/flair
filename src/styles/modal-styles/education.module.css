@@ -1,0 +1,19 @@
+.form {
+  @apply w-full px-8 py-4 text-[#818181] text-sm flex flex-col gap-4;
+}
+
+.form section {
+  @apply w-full flex flex-col gap-1;
+}
+
+.form section > * {
+  @apply w-full;
+}
+
+.form section input, .form section select {
+  @apply p-2 border;
+}
+
+.divide {
+  @apply w-full flex flex-row gap-4;
+}
