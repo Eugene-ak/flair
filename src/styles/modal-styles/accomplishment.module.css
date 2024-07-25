@@ -1,0 +1,7 @@
+.form {
+  @apply w-full px-8 py-4 flex flex-col gap-4;
+}
+
+.form > textarea {
+  @apply w-full p-4 border;
+}
